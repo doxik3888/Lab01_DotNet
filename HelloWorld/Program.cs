@@ -1,36 +1,56 @@
-﻿int age = 17;
+﻿// int age = 17;
+// double gpa = 4.5;
+// bool isStudent = true;
+// string name = "Дмитрий";
+
+// Console.WriteLine(name);
+// Console.WriteLine(age);
+// Console.WriteLine(gpa);
+// Console.WriteLine(isStudent);
+
+// var city = "Волжский";
+// var year = 2026;
+// var pi = 3.14159;
+// var isActive = true;
+
+// string myName = "Дмитрий";
+// int myAge = 20;
+// string myGroup = "ИСП-241";
+// Console.WriteLine($"Меня зовут {myName}, мне {myAge} лет, я учусь в группе {myGroup}");
+
+// Console.Write("Введите ваше имя: ");
+// string name2 = Console.ReadLine();
+// Console.WriteLine($"Привет, {name2}!");
+
+// Console.Write("Введите ваш возраст: ");
+// string input = Console.ReadLine();
+// int age = int.Parse(input);
+// Console.WriteLine($"Через 10 лет вам будет {age + 10} лет.");
+
+// int x = 10;
+// int y = 3;
+// Console.WriteLine(x + y);
+// Console.WriteLine(x - y);
+// Console.WriteLine(x * y);
+// Console.WriteLine(x / y);
+// Console.WriteLine(x % y);
+
+string firstName = "Иван";
+string lastName = "Иванов";
+string group = "ИСП-244";
+int birthYear = 2007;
 double gpa = 4.5;
-bool isStudent = true;
-string name = "Дмитрий";
+bool hasScholarship = true;
 
-Console.WriteLine(name);
-Console.WriteLine(age);
-Console.WriteLine(gpa);
-Console.WriteLine(isStudent);
+int currentYear = 2026;
+int age = currentYear - birthYear;
 
-var city = "Волжский";
-var year = 2026;
-var pi = 3.14159;
-var isActive = true;
-
-string myName = "Дмитрий";
-int myAge = 20;
-string myGroup = "ИСП-241";
-Console.WriteLine($"Меня зовут {myName}, мне {myAge} лет, я учусь в группе {myGroup}");
-
-Console.Write("Введите ваше имя: ");
-string name2 = Console.ReadLine();
-Console.WriteLine($"Привет, {name2}!");
-
-Console.Write("Введите ваш возраст: ");
-string input = Console.ReadLine();
-int age = int.Parse(input);
-Console.WriteLine($"Через 10 лет вам будет {age + 10} лет.");
-
-int x = 10;
-int y = 3;
-Console.WriteLine(x + y);
-Console.WriteLine(x - y);
-Console.WriteLine(x * y);
-Console.WriteLine(x / y);
-Console.WriteLine(x % y);
+Console.WriteLine("Студенческое удостоверение");
+Console.WriteLine($"Имя: {firstName} {lastName}");
+Console.WriteLine($"Группа: {group}");
+Console.WriteLine($"Возраст: {age} лет");
+Console.WriteLine($"Средний балл: {gpa}");
+Console.WriteLine($"Стипендия: {hasScholarship}");
+Console.Write("\nВведите ваш любимый предмет: ");
+string subject = Console.ReadLine();
+Console.WriteLine($"Отлично! {firstName} любит {subject}");
